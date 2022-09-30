@@ -1,0 +1,427 @@
+body {
+    font-family: 'MedievalSharp', cursive;
+    background-image: url("./assets/background_image.jpg");
+    background-size: cover;
+}
+
+.header {
+    padding: 0.5em;
+    margin: 0 auto;
+}
+
+.titulo {
+    padding: 0.5em;
+    margin: 0.5em;
+    background: lightslategray;
+    width: 20em;
+    border-radius: 0.5em;
+    font-weight: bold;
+    font-size: 1.2em;
+    opacity: 80%;
+    display: inline-block;
+}
+
+.logo {
+    width: 4em;
+}
+
+.medievalgallow {
+    position: absolute;
+    top: 3em;
+    left: 6em;
+}
+
+.regras {
+    background: whitesmoke;
+    opacity: 80%;
+    display: inline-block;
+    padding: 0.5em 4em 0.5em 0.5em;
+    border-radius: 0.5em;
+    vertical-align: top;
+    font-size: 1.1em;
+    margin: 0.6em 0.5em 0 0.5em;
+}
+
+.audio {
+    vertical-align: top;
+    margin: 0.8em 0 0 0.5em;
+    display: inline-block;
+    background: lightslategray;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.play_audio {
+    position: block;
+    background: whitesmoke;
+    padding: 0.2em 0.6em 0.2em 0.6em;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: 1s background;
+}
+
+.play_audio:hover {
+    background: lightsteelblue;
+}
+
+.play_audio:active {
+    background: darkslategray;
+}
+
+.pause_audio {
+    position: block;
+    background: whitesmoke;
+    padding: 0.2em 0.6em 0.2em 0.6em;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: 1s background;
+}
+
+.pause_audio:hover {
+    background: goldenrod;
+}
+
+.pause_audio:active {
+    background: darkslategray;
+}
+
+.pagina_inicial {
+    padding: 10.64em 0.5em;
+}
+
+.botoes_inicial {
+    margin: 0 auto;
+    padding: 0.5em;
+    width: 20em;
+    text-align: center;
+    background: lightslategray;
+    border-radius: 0.5em;
+    opacity: 80%;
+}
+
+.botao_inicial {
+    padding: 1em;
+    background: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    display: block;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 1px 1px darkslategray;
+    cursor: pointer;
+    width: 20em;
+    margin: 1em auto;
+    transition: 1s background;
+}
+
+.botao_inicial:hover {
+    background: darkgoldenrod;
+}
+
+.botao_inicial:active {
+    background: darkslategray;
+}
+
+.info {
+    display: inline-block;
+    background: whitesmoke;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+    border-radius: 1em;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+}
+
+.info .span {
+    display: none;
+    background: whitesmoke;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-size: 1.1em;
+    width: 28em;
+}
+
+.info:hover .span {
+    display: inline-block;
+    position: absolute;
+}
+
+.pagina_palavra {
+    padding: 9.392em 0.5em;
+}
+
+.shield {
+    position: absolute;
+    top: 10em;
+    left: 31em;
+    width: 20em;
+}
+
+.texto_palavra {
+    background: lightslategray;
+    padding: 0.5em;
+    margin: 0 auto;
+    width: 21em;
+    border-radius: 0.5em;
+    opacity: 80%;
+}
+
+.caixa_texto_palavra {
+    border: none;
+    width: 90%;
+    padding: 0.5em;
+    color: whitesmoke;
+    background: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.caixa_texto_palavra:focus {
+    outline: none;
+}
+
+.caixa_texto_palavra::placeholder {
+    color: lightsteelblue;
+}
+
+.regras_palavra {
+    background: whitesmoke;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    margin: 0.5em auto 0 auto;
+}
+
+.botoes_palavra {
+    background: lightslategray;
+    padding: 0.5em;
+    width: 21em;
+    margin: 1em auto 0 auto;
+    text-align: center;
+    border-radius: 0.5em;
+    opacity: 80%;
+}
+
+.botao_palavra {
+    padding: 1em;
+    background: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    font-weight: bold;
+    box-shadow: 1px 1px darkslategray;
+    cursor: pointer;
+    width: 12em;
+    transition: 1s background;
+    margin: auto 0.2em;
+    text-align: center;
+}
+
+.botao_palavra:hover {
+    background: darkgoldenrod;
+}
+
+.botao_palavra:active {
+    background: darkslategray;
+}
+
+.pagina_forca {
+    padding: 0.02em 0.5em;
+}
+
+.forca {
+    padding: 0.5em;
+    background-color: lightslategray;
+    background-image: url(./assets/library.jpg);
+    background-size: 100% 80%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border: 2px solid lightslategray;
+    width: 79.4em;
+    border-radius: 0.5em;
+    opacity: 80%;
+}
+
+.desenho_forca {
+    background: darkslategray;
+    border-radius: 0.5em;
+    display: inline-block;
+}
+
+.letra_certa {
+    border-radius: 0.5em;
+    padding: 0.2em;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0 0 0 0.26em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.desenho_letras_certas {
+    border-radius: 0.5em;
+    display: inline-block;
+    position: absolute;
+    top: 11em;
+    left: 26.6em;
+}
+
+.letras_erradas {
+    background: lightcoral;
+    border-radius: 0.5em;
+    display: inline-block;
+    padding: 0.5em;
+    width: 16em;
+    margin: 0 0.2em 0 0.2em;
+    font-weight: bold;
+    font-size: 2em;
+    opacity: 80%;
+    position: absolute;
+    top: 15em;
+    left: 13.2em;
+}
+
+.botoes_forca {
+    padding: 0.5em;
+    background: lightslategray;
+    margin: 0.4em 0 0.4em 0;
+    width: 24.4em;
+    border-radius: 0.5em;
+    opacity: 80%;
+}
+
+.botao_forca {
+    padding: 1em;
+    background: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px darkslategray;
+    font-weight: bold;
+    cursor: pointer;
+    width: 14em;
+    transition: 1s background;
+    text-align: center;
+    margin: auto 0.2em;
+}
+
+.botao_forca:hover {
+    background: darkgoldenrod;
+}
+
+.botao_forca:active {
+    background: darkslategray;
+}
+
+.copyright {
+    background: lightslategray;
+    text-align: center;
+    padding: 0.5em 0 0 0;
+    font-weight: bold;
+    font-size: 1.1em;
+    opacity: 80%;
+}
+
+.social {
+    background: black;
+    opacity: 80%;
+    margin: 0.5em 0 0 0;
+    padding: 0.5em 0 0.2em 0;
+}
+
+.linkedin {
+    width: 2em;
+    margin: 0 0.2em 0 0;
+}
+
+.github {
+    width: 2em;
+    margin: 0 0 0 0.2em;
+}
+
+@media screen and (max-width: 480px) {
+
+    .pagina_inicial {
+        padding: 8.82em 0.5em;   
+    }
+
+    .botoes_inicial {
+        margin: 0 2.4em 0 2.4em;
+    }
+
+    .info .span {
+        width: 18em;
+    }
+
+    .info:hover .span {
+        display: block;
+        position: absolute;
+        top: 33em;
+        left: 2.6em;
+    }
+
+    .pagina_palavra {
+        padding: 7.58em 0.5em;
+    }
+
+    .shield {
+        top: 18.3em;
+        left: 3.3em;
+    }
+
+    .texto_palavra {
+        margin: 0 1.8em 0 1.8em;
+    }
+
+    .botoes_palavra {
+        margin: 1em 1.8em 0 1.8em;
+    }
+
+    .pagina_forca {
+        padding: 1em 0.5em;
+    }
+
+    .forca {
+        width: 25.2em;
+    }
+
+    .desenho_forca {
+        display: block;
+        width: 25.48em;
+    }
+
+    .letra_certa {
+        font-size: 1.5em;
+        margin: 0.6em 0 0 0.22em;
+        background: lightsalmon;
+    }
+
+    .desenho_letras_certas {
+        width: 25.48em;
+        display: block;
+        position: static;
+    }
+
+    .letras_erradas {
+        display: block;
+        width: 16em;
+        margin: 0;
+        position: static;
+        font-size: 1.5em;
+        margin: 0.2em 0 0 0;
+    }
+
+    .botoes_forca {
+        margin: 0.4em 0 0.4em 0;
+    }
+
+    .copyright {
+        width: 24.42em;
+    }
+
+    .social {
+        padding: 0.5em 0 0.4em 0;
+    }
+}
