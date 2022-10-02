@@ -35,7 +35,7 @@ Jogo da forca proposto para desenvolvimento pelo programa ONE - Oracle & Alura, 
 #### • Só deve ser possível escrever letras, os números não serão válidos (nesses casos o sitema vai bloquear a inicialização);
 #### • As letras erradas devem aparecer na tela, mas não podem aparecer repetidamente;
 #### • As letras corretas devem ser mostradas na tela acima dos traços, nas posições corretas em relação à palavra;
-#### • A página deve conter um campo para inserção de texto com a finalidade de adicionar novas palavras ao jogo, e um botão de adicionar nova palavra (realizado no modo de jogo personalizado).
+#### • A página deve conter um campo para inserção de texto com a finalidade de adicionar novas palavras ao jogo, e um botão de adicionar nova palavra (realizado no modo de jogo personalizado)
 
 ##
 
