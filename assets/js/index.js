@@ -41,7 +41,7 @@ var erros = 0;
 botao_jogo.onclick = function() {
     if (palavras.length == 0) {
         alert("⚠️ Inventário de palavras vazio! Comece jogando uma partida personalizada");
-        let onclick = new Audio("./assets/notification.wav");
+        let onclick = new Audio("./assets/audio/notification.wav");
         onclick.addEventListener("canplaythrough", function() { onclick.play(); });
     }
     else if (palavras.length >= 1) {
@@ -49,7 +49,7 @@ botao_jogo.onclick = function() {
         document.getElementById("inicial_pagina").style.display = "none";
         document.getElementById("forca_pagina").style.display = "block";
         alert("✔️ Partida rápida criada! Use o teclado para jogar");
-        let onclick = new Audio("./assets/notification.wav");
+        let onclick = new Audio("./assets/audio/notification.wav");
         onclick.addEventListener("canplaythrough", function() { onclick.play(); });
         function forca_inicial() {
             let forca = document.getElementById("forca_desenho");
@@ -151,7 +151,7 @@ botao_jogo.onclick = function() {
                                         let desenho_letra_certa = document.getElementById(id[contador_letra]);
                                         desenho_letra_certa.innerText = letras_certas[contador_letra];
                                         acertos ++;
-                                        let onclick = new Audio("./assets/score.wav");
+                                        let onclick = new Audio("./assets/audio/score.wav");
                                         onclick.addEventListener("canplaythrough", function() { onclick.play(); });
                                     }
                                 }
@@ -255,7 +255,7 @@ botao_jogo.onclick = function() {
                                 if (acertos == palavra_rapida.length) {
                                     partida = 0;
                                     alert("✔️ Parabéns! Reinicie sua partida ou tente jogar com palavras mais difíceis");
-                                    let onclick = new Audio("./assets/win.mp3");
+                                    let onclick = new Audio("./assets/audio/win.mp3");
                                     onclick.addEventListener("canplaythrough", function() { onclick.play(); });
                                 }
                             }
@@ -268,12 +268,12 @@ botao_jogo.onclick = function() {
                                 desenho_letra_errada.innerText = letras_erradas.join(" ");
                                 erros ++;
                                 forca_tentativa();
-                                let onclick = new Audio("./assets/noscore.wav");
+                                let onclick = new Audio("./assets/audio/noscore.wav");
                                 onclick.addEventListener("canplaythrough", function() { onclick.play(); });
                                 if (erros == 6) {
                                     partida = 0;
                                     alert("❌ Você perdeu! Reinicie sua partida para jogar novamente");
-                                    let onclick = new Audio("./assets/lose.wav");
+                                    let onclick = new Audio("./assets/audio/lose.wav");
                                     onclick.addEventListener("canplaythrough", function() { onclick.play(); });
                                 }
                             }
@@ -290,7 +290,7 @@ botao_palavra.onclick = function() {
     document.getElementById("inicial_pagina").style.display = "none";
     document.getElementById("palavra_pagina").style.display = "block";
     document.getElementById("texto_palavra_caixa").focus();
-    let onclick = new Audio("./assets/onclick.wav");
+    let onclick = new Audio("./assets/audio/onclick.wav");
     onclick.addEventListener("canplaythrough", function() { onclick.play(); });
 }
 
@@ -300,12 +300,12 @@ botao_salvar.onclick = function() {
     palavra_nova_x.value = "";
     if (palavra_nova.length == 0) {
         alert("⚠️ Campo vazio");
-        let onclick = new Audio("./assets/notification.wav");
+        let onclick = new Audio("./assets/audio/notification.wav");
         onclick.addEventListener("canplaythrough", function() { onclick.play(); });
     }
     else if (palavra_nova.length <= 3) {
         alert("⚠️ Mínimo de 4 letras");
-        let onclick = new Audio("./assets/notification.wav");
+        let onclick = new Audio("./assets/audio/notification.wav");
         onclick.addEventListener("canplaythrough", function() { onclick.play(); });
     }
     else if (palavra_nova.length >= 4) {
@@ -314,18 +314,18 @@ botao_salvar.onclick = function() {
         let regex_c = /[a-z]|[A-Z]/;
         if (regex_a.test(palavra_nova)) {
             alert("⚠️ Palavra inválida! Retire as letras com acento, caracteres especiais ou os espaços/underlines da palavra");
-            let onclick = new Audio("./assets/notification.wav");
+            let onclick = new Audio("./assets/audio/notification.wav");
             onclick.addEventListener("canplaythrough", function() { onclick.play(); });
         }
         else if (regex_b.test(palavra_nova)) {
             alert("⚠️ Palavra inválida! Retire os números da palavra");
-            let onclick = new Audio("./assets/notification.wav");
+            let onclick = new Audio("./assets/audio/notification.wav");
             onclick.addEventListener("canplaythrough", function() { onclick.play(); });
         }
         else if (regex_c.test(palavra_nova)) {
             if (palavras.length == 10) {
                 alert("⚠️ Inventário de palavras cheio! Recarregue a página para iniciar uma nova sessão e limpar o inventário");
-                let onclick = new Audio("./assets/notification.wav");
+                let onclick = new Audio("./assets/audio/notification.wav");
                 onclick.addEventListener("canplaythrough", function() { onclick.play(); });
             }
             else if (palavras.length <= 9) {
@@ -335,7 +335,7 @@ botao_salvar.onclick = function() {
                 document.getElementById("palavra_pagina").style.display = "none";
                 document.getElementById("forca_pagina").style.display = "block";
                 alert("✔️ Partida personalizada criada! Use o teclado para jogar");
-                let onclick = new Audio("./assets/notification.wav");
+                let onclick = new Audio("./assets/audio/notification.wav");
                 onclick.addEventListener("canplaythrough", function() { onclick.play(); });
                 function forca_inicial() {
                     let forca = document.getElementById("forca_desenho");
@@ -437,7 +437,7 @@ botao_salvar.onclick = function() {
                                                 let desenho_letra_certa = document.getElementById(id[contador_letra]);
                                                 desenho_letra_certa.innerText = letras_certas[contador_letra];
                                                 acertos ++;
-                                                let onclick = new Audio("./assets/score.wav");
+                                                let onclick = new Audio("./assets/audio/score.wav");
                                                 onclick.addEventListener("canplaythrough", function() { onclick.play(); });
                                             }
                                         }
@@ -541,7 +541,7 @@ botao_salvar.onclick = function() {
                                         if (acertos == palavra_personalizada.length) {
                                             partida = 0;
                                             alert("✔️ Parabéns, você ganhou! Reinicie sua partida ou tente jogar com palavras mais difíceis");
-                                            let onclick = new Audio("./assets/win.mp3");
+                                            let onclick = new Audio("./assets/audio/win.mp3");
                                             onclick.addEventListener("canplaythrough", function() { onclick.play(); });
                                         }
                                     }
@@ -554,12 +554,12 @@ botao_salvar.onclick = function() {
                                         desenho_letra_errada.innerText = letras_erradas.join(" ");
                                         erros ++;
                                         forca_tentativa();
-                                        let onclick = new Audio("./assets/noscore.wav");
+                                        let onclick = new Audio("./assets/audio/noscore.wav");
                                         onclick.addEventListener("canplaythrough", function() { onclick.play(); });
                                         if (erros == 6) {
                                             partida = 0;
                                             alert("❌ Você perdeu! Reinicie sua partida para jogar novamente");
-                                            let onclick = new Audio("./assets/lose.wav");
+                                            let onclick = new Audio("./assets/audio/lose.wav");
                                             onclick.addEventListener("canplaythrough", function() { onclick.play(); });
                                         }
                                     }
@@ -579,7 +579,7 @@ botao_cancelar.onclick = function() {
     palavra_nova.value = "";
     document.getElementById("palavra_pagina").style.display = "none";
     document.getElementById("inicial_pagina").style.display = "block";
-    let onclick = new Audio("./assets/onclick.wav");
+    let onclick = new Audio("./assets/audio/onclick.wav");
     onclick.addEventListener("canplaythrough", function() { onclick.play(); });
 }
 
@@ -665,14 +665,14 @@ botao_reiniciar.onclick = function() {
         partida = 1;
         reiniciar_partida1();
         alert("✔️ Partida rápida reiniciada! Use o teclado para jogar");
-        let onclick = new Audio("./assets/notification.wav");
+        let onclick = new Audio("./assets/audio/notification.wav");
         onclick.addEventListener("canplaythrough", function() { onclick.play(); });
     }
     if (reboot == 2) {
         partida = 2;
         reiniciar_partida2();
         alert("✔️ Partida personalizada reiniciada! Use o teclado para jogar");
-        let onclick = new Audio("./assets/notification.wav");
+        let onclick = new Audio("./assets/audio/notification.wav");
         onclick.addEventListener("canplaythrough", function() { onclick.play(); });
     }
 }
@@ -697,6 +697,6 @@ botao_desistir.onclick = function() {
     letras_erradas = [];
     acertos = 0;
     erros = 0;
-    let onclick = new Audio("./assets/onclick.wav");
+    let onclick = new Audio("./assets/audio/onclick.wav");
     onclick.addEventListener("canplaythrough", function() { onclick.play(); });
 }
